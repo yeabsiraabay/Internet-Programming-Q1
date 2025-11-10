@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif; 
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+:root {
+    --color-orange: #fc4806;
+    --color-dark-grey: #3c3c3c;
+    --color-green: #008000;
+    --color-text-light: #ccc;
+    --color-text-dark: #444;
+    --color-highlight-yellow: #ffff00;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    color: var(--color-text-dark);
+    padding-top: 25px;
+}
+
+.by-templated {
+    font-size: 0.7em;
+    color: #999;
+    margin-left: 10px;
+    border-left: 3px solid #999;
+    padding-left: 8px;
+    height : 40px;
+    margin-top: 25px;
+    padding-top: 13px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: var(--color-text-dark);
+    padding: 10px 15px;
+    display: block;
+    font-size: 0.85em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar li:first-child a {
+    background-color: var(--color-orange); 
+    color: white;
+}
+ .barbar {
+    background-color: rgb(220, 215, 215);
+    margin-right:  2px;
+ }
+.banner-section {
+    position: relative;
+}
+
+.banner-image-container {
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    display: block;
+}
+
+.banner-info-box {
+    background-color: var(--color-orange);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.banner-info-box p {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.highlight {
+    text-decoration: underline;
+}
+
+.dark-bg {
+    background-color: var(--color-dark-grey);
+    color: var(--color-text-light);
+    padding: 60px 0;
+}
+
+.dark-bg-2 {
+    background-color: var(--color-dark-grey);
+    color: var(--color-text-light);
+    padding: 40px 0 80px;
+    border-top: 1px solid #4a4a4a;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.feature-item, .content-item {
+    flex-basis: 25%;
+}
+
+.feature-item {
+    text-align: center;
+}
+
+.icon-wrap {
+    display: block;
+    font-size: 3em;
+    background-color: var(--color-orange);
+    margin-bottom: 10px;
+    width: 100px;
+    margin: auto;
+}
+
+.feature-item h3, .content-item h3 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.feature-item p {
+    font-size: 0.85em;
+}
+
+.cta-section {
+    background-color: white;
+    padding: 80px 0;
+    text-align: center;
+    color: var(--color-text-dark);
+}
+
+.cta-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.cta-section p {
+    color: #777;
+    margin-bottom: 30px;
+    font-size: 0.95em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.button {
+    background-color: var(--color-green);
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.footer {
+    background-color: var(--color-green);
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.75em;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .navbar li a {
+        padding: 8px 10px;
+    }
+    .feature-grid {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .feature-item, .content-item {
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
